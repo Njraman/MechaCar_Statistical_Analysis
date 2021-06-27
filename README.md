@@ -37,3 +37,26 @@ The following screenshots display the results of Summary Statistics calculations
 Per the design specifications, the variance of the suspension coils should not exceed 100 pounds per square inch. According to the Total summary for all manufactruring lots, the variance does not exceed 100 pounds PSI and therefore meets design specifications. But, the lot summary shows that Lot 3 exceeds the recommended variance. So when we look at the lot specific data, while lot 1 and 2 meet the design specifications, lot 3 does not meet the same.
 
 
+## T-Tests on Suspension Coils
+
+T Tests were performed on Suspension Coil data to  determine if the PSI across all manufacturing lots as well as PSI of each manufacturing lot were statistically different from the population mean of 1500 pounds per square inch. 
+
+Our Hypotheses for these tests are as follows:
+H0 : Null Hypothesis: There is no statistical difference between the observed sample mean and its presumed population mean.
+Ha : Alternate Hypothesis: There is a statistical difference between the observed sample mean and its presumed population mean.
+
+The results and conclusion of the tests are given below:
+
+### All Lots mean PSI vs Population Mean:
+![MeanPSIVsPopulationMean](Images/MeanPSIVsPopulationMean.png)
+
+The calculated p-value is 0.06 which is above the significance level of 0.05 and therefore we do not have sufficient evidence to reject the null hypothesis and we can state that both means are statistically similar.
+### Mean PSI of each Lot vs Population Mean:
+
+![MeanPSIperLotVsPopMean](Images/MeanPSIperLotVsPopMean.png)
+
+For lot 1, the p-value of 1 is above the significance level of 0.05. Therefore we do not reject the null hypothesis and state that the mean of Lot 1 is statistically similar to the Population mean of 1500.
+
+For lot 2, the p-value of 0.6 is above the significance level of 0.05. Therefore we do not reject the null hypothesis and state that the mean of Lot 2 is statistically similar to the Population mean of 1500.
+
+For lot 3 , the p-value of 0.04 is less than the significance level of 0.05. Therefore we can reject the null hypothesis and state that the mean of Lot 3 is statistically different from the Population mean of 1500.
